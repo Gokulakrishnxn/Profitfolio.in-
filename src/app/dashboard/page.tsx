@@ -2,7 +2,6 @@ import { Dashboard } from "@/components/dashboard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Navigation } from "@/components/navigation";
-import Link from "next/link";
 
 export default function DashboardPage() {
   return (

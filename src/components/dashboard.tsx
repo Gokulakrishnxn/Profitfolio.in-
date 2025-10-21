@@ -3,7 +3,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { Separator } from "@/components/ui/separator";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 export function Dashboard() {
@@ -37,7 +36,7 @@ export function Dashboard() {
 
         <Card>
           <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium">Today's Change</CardTitle>
+            <CardTitle className="text-sm font-medium">Today&apos;s Change</CardTitle>
           </CardHeader>
           <CardContent>
             <div className={`text-2xl font-bold ${totalChange >= 0 ? "text-green-600" : "text-red-600"}`}>

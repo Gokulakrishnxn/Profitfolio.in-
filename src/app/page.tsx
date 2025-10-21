@@ -2,17 +2,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Navigation } from "@/components/navigation";
-import { TrendingUp, TrendingDown, DollarSign, Target, BarChart3, PieChart, Calendar, Star, ArrowRight, Activity, Users, BookOpen, Shield, Zap, Globe, Search, Filter, User, Bell, ChevronDown, Plus, ArrowLeft, ArrowRight as ArrowRightIcon, Play, CheckCircle } from "lucide-react";
+import { TrendingUp, TrendingDown, DollarSign, Target, BarChart3, Calendar, Activity, BookOpen, Shield, Zap, Globe, Play } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
   return (
         <div className="min-h-screen bg-white dark:bg-[#000000] relative">
           {/* Background Grid Pattern */}
-          <div className="absolute inset-0 bg-grid-pattern opacity-5 dark:opacity-10 pointer-events-none"></div>
+          <div className="absolute inset-0 bg-grid-pattern-enhanced opacity-30 dark:opacity-20 pointer-events-none"></div>
           <Navigation />
 
       {/* Hero Section */}
@@ -59,7 +58,9 @@ export default function Home() {
       <div className="relative -mt-32 mb-20 px-4">
         <div className="container mx-auto">
           <div className="max-w-6xl mx-auto">
-            <Card className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-2xl dark:shadow-green-500/20 rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-3xl">
+            <Card className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-2xl dark:shadow-green-500/20 rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-3xl relative">
+              {/* Subtle Grid Pattern on Card */}
+              <div className="absolute inset-0 bg-grid-pattern opacity-5 dark:opacity-10 pointer-events-none rounded-xl"></div>
               <CardHeader className="bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 p-8 border-b border-gray-200 dark:border-gray-700">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div>

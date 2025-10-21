@@ -8,7 +8,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#000000] relative">
       {/* Background Grid Pattern */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-5 dark:opacity-10 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-grid-pattern-enhanced opacity-30 dark:opacity-20 pointer-events-none"></div>
       <Navigation />
 
       <main className="container mx-auto px-4 py-8">
@@ -34,7 +34,7 @@ export default function AboutPage() {
                   has evolved into a systematic approach that consistently outperforms market benchmarks.
                 </p>
                 <p>
-                  I believe in transparency and education. That's why I document every decision, 
+                  I believe in transparency and education. That&apos;s why I document every decision, 
                   every win, and every loss. My goal is to help others learn from my experiences 
                   and develop their own successful investment strategies.
                 </p>
@@ -168,7 +168,7 @@ export default function AboutPage() {
               and failures - I hope to help others develop their own successful investment strategies.
             </p>
             <p className="text-muted-foreground">
-              This isn't about giving financial advice. It's about education, transparency, 
+              This isn&apos;t about giving financial advice. It&apos;s about education, transparency, 
               and building a community of informed investors who make better financial decisions.
             </p>
             <div className="mt-6 p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border border-yellow-200 dark:border-yellow-800">

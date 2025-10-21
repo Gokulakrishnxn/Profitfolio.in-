@@ -9,7 +9,7 @@ import { Progress } from "@/components/ui/progress";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
-import { TrendingUp, TrendingDown, DollarSign, Target, BarChart3, PieChart, Calendar, Star, RefreshCw, ChevronLeft, ChevronRight } from "lucide-react";
+import { TrendingUp, DollarSign, Target, BarChart3, Star, RefreshCw } from "lucide-react";
 import { usePortfolioData } from "@/hooks/use-portfolio-data";
 
 export default function MyPortfolioPage() {
@@ -95,19 +95,6 @@ export default function MyPortfolioPage() {
   ];
 
   const currentQuarter = quarters[currentQuarterIndex];
-  const currentQuarterStocks = currentQuarter?.stocks || [];
-
-  const handlePreviousQuarter = () => {
-    if (currentQuarterIndex < quarters.length - 1) {
-      setCurrentQuarterIndex(currentQuarterIndex + 1);
-    }
-  };
-
-  const handleNextQuarter = () => {
-    if (currentQuarterIndex > 0) {
-      setCurrentQuarterIndex(currentQuarterIndex - 1);
-    }
-  };
 
 
   if (loading) {
@@ -138,7 +125,7 @@ export default function MyPortfolioPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#000000] relative">
       {/* Background Grid Pattern */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-5 dark:opacity-10 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-grid-pattern-enhanced opacity-30 dark:opacity-20 pointer-events-none"></div>
       <Navigation />
 
       <main className="container mx-auto px-4 py-8">

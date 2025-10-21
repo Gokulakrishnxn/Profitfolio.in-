@@ -1,12 +1,11 @@
 import { Navigation } from "@/components/navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Progress } from "@/components/ui/progress";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
-import { TrendingUp, TrendingDown, DollarSign, Target, BarChart3, PieChart } from "lucide-react";
+import { TrendingUp, TrendingDown, DollarSign, Target, BarChart3 } from "lucide-react";
 
 export default function PortfolioPage() {
   const initialCapital = 1000000; // Rs. 10 Lakhs
@@ -24,7 +23,6 @@ export default function PortfolioPage() {
 
   const totalValue = portfolioData.reduce((sum, stock) => sum + stock.value, 0);
   const totalChange = portfolioData.reduce((sum, stock) => sum + (stock.value * stock.changePercent / 100), 0);
-  const totalChangePercent = (totalChange / totalValue) * 100;
 
   return (
     <div className="min-h-screen bg-white dark:bg-black">
@@ -156,7 +154,7 @@ export default function PortfolioPage() {
             <CardContent className="p-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm text-muted-foreground">Today's Change</p>
+                  <p className="text-sm text-muted-foreground">Today&apos;s Change</p>
                   <p className="text-2xl font-bold text-green-600">+₹24,000</p>
                   <p className="text-xs text-green-600">+1.0%</p>
                 </div>

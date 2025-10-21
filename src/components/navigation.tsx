@@ -11,7 +11,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Menu, X, Home, BarChart3, BookOpen, User, Settings, Sun, Moon } from "lucide-react";
+import { Menu, Home, BarChart3, BookOpen, User } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Navigation() {

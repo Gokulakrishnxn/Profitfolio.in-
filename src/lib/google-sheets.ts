@@ -28,7 +28,7 @@ export async function getPortfolioData() {
       range: `${SHEET_NAME}!A2:H`, // Assuming data starts from row 2
     });
 
-    const holdings = holdingsResponse.data.values?.map((row: any[]) => ({
+    const holdings = holdingsResponse.data.values?.map((row: string[]) => ({
       symbol: row[0],
       name: row[1],
       shares: parseInt(row[2]) || 0,
@@ -45,7 +45,7 @@ export async function getPortfolioData() {
       range: `${SHEET_NAME}!J2:P`, // Quarterly data in different columns
     });
 
-    const quarterlyData = quarterlyResponse.data.values?.map((row: any[]) => ({
+    const quarterlyData = quarterlyResponse.data.values?.map((row: string[]) => ({
       quarter: row[0],
       investment: parseFloat(row[1]) || 0,
       return: parseFloat(row[2]) || 0,
