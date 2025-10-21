@@ -4,10 +4,25 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Navigation } from "@/components/navigation";
-import { TrendingUp, TrendingDown, DollarSign, Target, BarChart3, Calendar, Activity, BookOpen, Shield, Zap, Globe, Play } from "lucide-react";
+import { TrendingUp, TrendingDown, DollarSign, Target, BarChart3, Calendar, Activity, BookOpen, Shield, Zap, Globe, Play, CheckCircle } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
+  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [email, setEmail] = useState("");
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email) {
+      setIsSubscribed(true);
+      // Reset after 3 seconds
+      setTimeout(() => {
+        setIsSubscribed(false);
+        setEmail("");
+      }, 3000);
+    }
+  };
   return (
         <div className="min-h-screen bg-white dark:bg-[#000000] relative">
           {/* Background Grid Pattern */}

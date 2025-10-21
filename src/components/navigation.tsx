@@ -70,9 +70,6 @@ export function Navigation() {
             {/* CTA Buttons */}
             <div className="flex items-center space-x-4">
               <ThemeToggle />
-              <Button variant="outline" size="sm">
-                Sign In
-              </Button>
               <Button size="sm" className="bg-green-600 hover:bg-green-700 text-white">
                 Subscribe
               </Button>
@@ -147,9 +144,6 @@ export function Navigation() {
           </Link>
           
           <div className="flex items-center space-x-2">
-            <Button variant="outline" size="sm" className="text-xs px-3">
-              Sign In
-            </Button>
             <Button size="sm" className="bg-green-600 hover:bg-green-700 text-white text-xs px-3">
               Subscribe
             </Button>
