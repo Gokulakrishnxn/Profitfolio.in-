@@ -84,16 +84,6 @@ export default function Home() {
                     <CardTitle className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Portfolio Performance</CardTitle>
                     <CardDescription className="text-lg text-gray-600 dark:text-gray-400">Real-time tracking of your investment journey</CardDescription>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Badge className="bg-green-500/20 text-green-600 dark:text-green-400 border-green-500/30 px-4 py-2 text-sm font-medium">
-                      <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
-                      Live Data
-                    </Badge>
-                    <div className="text-right">
-                      <p className="text-sm text-gray-500 dark:text-gray-400">Last Updated</p>
-                      <p className="text-sm font-medium text-gray-900 dark:text-white">2 mins ago</p>
-                    </div>
-                  </div>
                 </div>
               </CardHeader>
               
@@ -142,11 +132,7 @@ export default function Home() {
                 <div className="mb-10">
                   <div className="flex items-center justify-between mb-8">
                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Current Holdings</h3>
-                    <div className="flex items-center gap-3">
-                      <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                      <span className="text-sm text-green-600 dark:text-green-400 font-medium">Live Data</span>
-                      <div className="text-sm text-gray-500 dark:text-gray-400">• 5 stocks</div>
-                    </div>
+                    <div className="text-sm text-gray-500 dark:text-gray-400">5 stocks</div>
                   </div>
                   
                   {/* Holdings Table */}
