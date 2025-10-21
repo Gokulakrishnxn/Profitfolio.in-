@@ -1,10 +1,12 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Navigation } from "@/components/navigation";
-import { TrendingUp, TrendingDown, DollarSign, Target, BarChart3, Calendar, Activity, BookOpen, Shield, Zap, Globe, Play, CheckCircle } from "lucide-react";
+import { TrendingUp, TrendingDown, DollarSign, Target, BarChart3, Calendar, Activity, BookOpen, Shield, Zap, Globe, Play, CheckCircle, Mail } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
